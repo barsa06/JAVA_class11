@@ -6,46 +6,46 @@ public class Season {
         System.out.print("Enter month of the year to find the Season:");
         String month = input.nextLine();
         switch (month) {
-            case january :
-                System.out.println("wuit");
+            case "january" :
+                System.out.println("Winter");
                 break;
-            case february :
-                System.out.println("yoy");
+            case "february" :
+                System.out.println("Winter");
                 break;
-            case :
-                System.out.println("");
+            case "March":
+                System.out.println("Spring");
                 break;
-            case 4:
-                System.out.println("");
+            case "April":
+                System.out.println("Spring");
                 break;
-            case 5:
-                System.out.println("");
+            case "may":
+                System.out.println("Spring");
                 break;
-            case 6:
-                System.out.println("");
+            case "June":
+                System.out.println("Summer");
                 break;
-            case 7:
-                System.out.println("");
+            case "July":
+                System.out.println("Summer");
                 break;
-            case 8:
-                System.out.println("");
+            case "August":
+                System.out.println("Summer");
                 break;
-            case 9:
-                System.out.println("");
+            case "September":
+                System.out.println("Autumn");
                 break;
-            case 10:
-                System.out.println("");
+            case  "October":
+                System.out.println("Autumn");
                 break;
-            case 11:
-                System.out.println("");
+            case "November":
+                System.out.println("Autumn");
                 break;
-            case 12:
-                System.out.println("");
+            case "December":
+                System.out.println("Winter");
                 break;
             
     
             default:
-                System.out.println("");
+                System.out.println("invalid input");
                 break;
         }
     }
