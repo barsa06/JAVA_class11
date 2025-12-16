@@ -8,22 +8,31 @@ public class Guess{
       }
 
      void guessNum(){
+      Scanner input= new Scanner(System.in);
+       int num;
+       int count=0;
+       
+      while(true){
+        System.out.println("Enter the number you want to guess");
+        num= input.nextInt();
+        count ++;
+        
         if(secretNum<num){
-            System.out.println("my num is smaller than " + num);
+            System.out.println("The num is smaller than " + num);
         }
         else if(secretNum>num){
-            System.out.println("my num is greater than" + num);
+            System.out.println("The num is greater than " + num);
         }
         else{
-            Sytem.out.println("you have the correct guess");
+            System.out.println("you have the correct guess.");
+            break;
         }
+
+      }
+      System.out.println("you guessed it right in " + count + " attempt.");
      }
    public static void main(String args[]){
-       Scanner input= new Scanner(System.in);
-       System.out.println("Enter the number you want to guess");
-       int num = input.nextInt();
-       
-       
-
+       Guess myGuess = new Guess(20);
+       myGuess.guessNum();
   }
 }
