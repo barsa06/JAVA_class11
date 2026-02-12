@@ -9,6 +9,7 @@ public class SumOfDigonal{
 
         System.out.println("enter the no of columns:");
         int cols=input.nextInt();
+        int sum=0;
 
         int [][] a=new int [rows][cols];
         for(int i=0; i<rows; i++){
@@ -21,9 +22,10 @@ public class SumOfDigonal{
         for(int i=0; i<rows; i++){
            for(int j=0; j<cols; j++){
             if(i==j){
-              System.out.println(a[i]+a[j]);
+                sum=sum+a[i][j];
             }
            }
     }
+    System.out.println("the sum of digonal" + sum);
 }
 }
